@@ -1,2 +1,1 @@
-this is test.txt file
-this file has been created and modified by sachin ronson dsilva
+Document Object Model(DOM) is a programming interface for web documents.It represents the web page asstyles..
