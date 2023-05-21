@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prompt bg-onclick Image</title>
+</head>
+
+<body>
+<button onclick="enableBgImage()">Enable Background Image</button>    
+
+<script>
+    let userBgColor=prompt("Enter the background color ?");
+    document.body.style.backgroundColor=userBgColor;
+    
+
+    function enableBgImage(){
+        document.body.style.background="url(bg.jpg)";
+    }
+
+</script>
+</body>
+</html>

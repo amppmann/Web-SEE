@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <title>JQUERY-Mouse down and up</title>
+</head>
+<style>
+    img {
+        height: 300px;
+        width: 500px;
+        border-radius: 10px;
+        margin: 50px auto;
+        display: block;
+        box-shadow: 0 0 4px 4px black;
+        transition-duration: 300ms;
+    }
+</style>
+<script>
+    $(document).ready(function () {
+        $("#bgImage").mousedown(function () {
+            $(this).css("height", "350px");
+            $(this).css("width", "600px");
+        });
+        $("#bgImage").mouseup(function () {
+            $(this).css("height", "300px");
+            $(this).css("width", "500px");
+        });
+    });
+</script>
+
+<body>
+    <img id="bgImage" src="bg.jpg" alt="background.jpg" onmouseup="mouseUp()" onmousedown="mouseDown()">
+
+    <script>
+        function mouseDown(){
+            document.querySelector("img").style.height="350px;"
+            document.querySelector("img").style.width="600px;"
+        }
+        
+        function mouseDown(){
+            document.querySelector("img").style.height="300px;"
+            document.querySelector("img").style.width="500px;"
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lowercase to uppercase</title>
+</head>
+<body>
+    <h1>Lowercase to Uppercase</h1>
+    <label for="string">Enter a string :</label>
+    <input type="text" id="string" name="string">
+    <button onclick="getUpperCase()">Get uppercase</button>
+    <button onclick="getLowerCase()">Get lowercase</button>
+    <div id="upper"></div>
+<script>
+    function getUpperCase(){
+        let inputValue=document.getElementById("string").value;
+
+        let result=inputValue.toUpperCase()
+        let finalValue="<strong>Uppercase : </strong>"+result;
+        document.getElementById("upper").innerHTML=finalValue;
+    }
+
+    function getLowerCase(){
+        let inputValue=document.getElementById("string").value;
+
+        let result=inputValue.toLowerCase()
+        let finalValue="<strong>Lowercase : </strong>"+result;
+        document.getElementById("upper").innerHTML=finalValue;
+    }
+</script>
+</body>
+</html>
