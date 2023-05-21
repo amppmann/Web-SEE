@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <title>Index-Terms and Conditions</title>
+</head>
+<style>
+    p {
+        margin: 20px 50px;
+        padding: 20px 30px;
+        border: 2px solid black;
+        background-color: yellow;
+        color: black;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    div {
+        margin: 20px 50px;
+    }
+
+    button {
+        font-size: 20px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    $(document).ready(function () {
+
+       $("#submit").click(function(){
+        if($("#terms").is(":checked")){
+            $("#data").text("Your data has been successfully submitted..");
+        } else{
+            alert("Please accept our terms and conditons..");
+        }
+       })
+    });
+</script>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ullam veritatis ipsam dicta, reprehenderit
+        quaerat sint deleniti praesentium repellendus beatae! Mollitia quidem porro repudiandae ipsam officiis in, magni
+        quae impedit eum distinctio tempore error saepe perferendis eveniet repellat cupiditate atque delectus quisquam
+        labore. Vitae, dignissimos fugit harum distinctio dolorem veritatis maiores, voluptas totam perferendis numquam
+        velit doloribus ab itaque. Possimus officia voluptatibus corporis eveniet placeat nostrum modi obcaecati ullam,
+        amet vitae atque cumque deserunt odit accusamus excepturi quas voluptas tenetur molestias tempora libero
+        molestiae quasi asperiores perferendis. Dicta itaque odit rem ipsa quam culpa fugit, laboriosam consequatur,
+        quibusdam architecto suscipit quas laborum minima magnam possimus minus ducimus in esse! Ratione autem nulla
+        dolor, veniam incidunt repellat placeat est non nihil libero dolores consequuntur odit quaerat adipisci porro
+        cumque expedita culpa laudantium, architecto, velit sed. Mollitia veritatis, velit, laborum temporibus impedit
+        odit aut incidunt nesciunt totam eaque a architecto? Magnam reiciendis voluptates, molestias distinctio atque
+        nisi? At ratione distinctio nemo hic adipisci necessitatibus quod laborum placeat. Totam incidunt error debitis
+        consequuntur cupiditate illum quae repellendus cum, voluptatem blanditiis laborum ipsa maiores, sit sint? Quod,
+        soluta inventore? Veniam non, voluptatem hic ab impedit corrupti, assumenda necessitatibus explicabo, sint eius
+        tenetur alias odio.</p>
+    <div>
+        <input type="checkbox" name="checkbox" id="terms" value="off"><span>Agree to our terms and conditions</span>
+    </div>
+    <div>
+        <button id="submit">Submit</button>
+
+    </div>
+    <div>
+        <span id="data"></span>
+    </div>
+</body>
+
+</html>
