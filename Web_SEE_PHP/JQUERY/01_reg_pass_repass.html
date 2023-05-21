@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>JQUERY-Password validation</title>
+</head>
+<script>
+    $(document).ready(function(){
+        $("#submit").click(function(){
+            
+            let password=$("#password").val();
+            let repassword=$("#re-password").val();
+
+            if(password===repassword){
+                $("#data").text("Data saved successfully");
+            } else {
+                alert("Passwords doesnt match each other");
+                $("#name").val("");
+                $("#password").val("");
+                $("#re-password").val("");
+            }
+
+        })
+    })
+</script>
+<body>
+    <h1>Password validation</h1>
+        <label for="name">Enter your name :</label>
+        <input type="text" name="name" id="name">
+        <br>
+        <br>
+        <label for="password">Enter password :</label>
+        <input type="password" name="password" id="password" required>
+        <br>
+        <br>
+        <label for="repassword">Re-enter password :</label>
+        <input type="password" name="password" id="re-password" required>
+        <br>
+        <br>
+        <input type="submit" value="submit" id="submit" name="submit">
+        <br>
+        <br>
+    <div id="data"></div>
+
+</body>
+
+</html>
